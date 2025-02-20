@@ -1,0 +1,24 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css';
+@import 'https://use.fontawesome.com/releases/v5.8.1/css/all.css';
+
+/* Style personnalisé pour le bouton Se connecter */
+.btn-blue {
+    background-color: #007bff; /* Fond bleu */
+    color: white;              /* Texte blanc */
+    border: none;              /* Pas de bordure */
+    padding: 10px 20px;        /* Espacement interne */
+    font-size: 16px;           /* Taille du texte */
+    border-radius: 25px;      /* Bords arrondis */
+    width: 100%;               /* Largeur pleine */
+    display: block;            /* Affichage en bloc pour qu'il prenne toute la largeur disponible */
+}
+
+/* Changer la couleur au survol */
+.btn-blue:hover {
+    background-color: #0056b3; /* Bleu foncé au survol */
+}
+
+/* Espacement entre le bouton et le lien Mot de passe oublié */
+.mt-3 {
+    margin-top: 1.5rem; /* Ajout d'un espacement au-dessus du lien */
+}

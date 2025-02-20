@@ -1,0 +1,96 @@
+/* Styles pour le conteneur principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Titre de la page */
+h2.text-center {
+    color: #ffcc00;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #004c99;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Styles pour le fond de la section */
+.container.mt-3 {
+    background: linear-gradient(120deg, #f4f4f4, #e8f0fa);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles pour les cartes */
+.card {
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid #ffcc00;
+}
+
+.card-body {
+    padding: 15px;
+    background: #fdfdfd;
+    border-top: 1px solid #eaeaea;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #004c99;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card-text strong {
+    color: #004c99;
+}
+
+/* Mise en page responsive */
+.row {
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2.text-center {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,106 @@
+<header>
+    <!-- Section supérieure : Logo et Titre -->
+    <div class="header-top d-flex align-items-center justify-content-between">
+        <!-- Logo et titre -->
+        <div class="brand-container d-flex align-items-center">
+            <img src="http://localhost:8086/images/LogoVehicule.png" alt="Logo" class="picture">
+            <strong class="brand-title">PARK AUTO</strong>
+        </div>
+        <!-- Section centrale : Barre de recherche -->
+        <div class="header-center">
+            <div class="search-container">
+                <input type="text" class="form-control" placeholder="Rechercher un véhicule">
+                <span class="fas fa-search search-icon"></span>
+            </div>
+        </div> 
+        <!-- Section inférieure : Navigation -->
+        <nav class="header-bottom navigation">
+            <ul class="nav-list d-flex justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/vehicule" routerLinkActive="active">Tous</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/voiture" routerLinkActive="active">Voitures</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/camion" routerLinkActive="active">Camions</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!-- Boutons Login et Register -->
+        <div class="auth-buttons d-flex">
+            <a href="/login" class="btn btn-outline-light mx-2">Login</a>
+            <a href="/register" class="btn btn-outline-light mx-2">Register</a>
+        </div>
+        
+        <!-- Bouton avec badge (Panier) -->
+        <button class="btn btn-primary action-button">
+            <a href="/cart" style="font-size: 20px;" class="fas fa-shopping-cart"></a>
+            <div class="badge bg-danger">{{totalItem}}</div>
+        </button>
+    </div>
+</header>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Main Header -->
+    <!-- <div class="navbar align-item-center d-flex">
+        <img src="http://localhost:8086/images/LogoVehicule.png" alt="image" class="picture">
+        <strong style="font-size: 30px; color: white;">PARK AUTO</strong>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="search vehicule">
+            <span class="fas fa-search search-icon"></span>
+        </div>
+            <button class="btn btn-primary">
+                <i style="font-size: 30px;" class="fas fa-card-plus"></i>
+                <div style="font-size: 10px;" class="badge bg-danger">1</div>
+            </button>
+            <h5 class="nav-item">
+                <a class="nav-link text-white" routerLink="/vehicule" routerLinkActive="active">Tous</a>
+            </h5>
+            <h5 class="nav-item">
+                <a class="nav-link text-white" routerLink="/voiture" routerLinkActive="active">Voitures</a>
+            </h5>
+            <h5 class="nav-item">
+                <a class="nav-link text-white" routerLink="/camion" routerLinkActive="active">Camions</a>
+            </h5>
+    </div> -->
+
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-primary shadow-lg">
+            <a class="navbar-brand text-white mx-auto" href="#">Gestion des Véhicules</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" routerLink="/vehicule" routerLinkActive="active">Tous</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" routerLink="/voiture" routerLinkActive="active">Voitures</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" routerLink="/camion" routerLinkActive="active">Camions</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+</header> -->

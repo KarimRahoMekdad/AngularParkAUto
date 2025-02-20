@@ -1,0 +1,72 @@
+<div class="container" id="main-wrapper" style="margin-top: 5em; margin-bottom: 50em;">
+    <div class="row justify-content_center">
+        <div class="col-xl-10">
+            <div class="card-body p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <div class="p-5">
+                            <div class="mb-5">
+                                <h3 class="h4 text-theme text-center"> Register</h3>
+                            </div>
+                            <h6 class="h5 mb-0">Heureux de vous voir</h6>
+                            <p class="text-muted mt-2 mb-5">
+                                Entrez votre nom de famille, prénom, et email pour accéder à l'interface utilisateur
+                            </p>
+                            <form #registerForm="ngForm" (ngSubmit)="onRegister(registerForm.value)">
+                                <div class="form-group">
+                                    <label for="lastname">Nom </label>
+                                    <input type="text" class="form-control" name="lastname" placeholder="lastname" ngModel #lastnameInput="ngModel" required>
+                                <span class="help-block" style="color: red;" *ngIf="lastnameInput.invalid && lastnameInput.touched">
+                                    Veuillez entrez votre nom de famille
+                                </span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="firstname">Prénom </label>
+                                    <input type="text" class="form-control" name="firstname" placeholder="firstname" ngModel #firstnameInput="ngModel" required>
+                                <span class="help-block" style="color: red;" *ngIf="firstnameInput.invalid && firstnameInput.touched">
+                                    Veuillez entrez votre prénom
+                                </span>
+                                </div>
+
+                                <div class="form-group mb-5">
+                                    <label for="email">Email </label>
+                                    <input type="email" class="form-control" name="email" placeholder="email" ngModel #emailInput="ngModel" required>
+                                    <span class="help-block" style="color: red;" *ngIf="emailInput.invalid && emailInput.touched">
+                                        Veuillez entrez votre mail
+                                    </span>
+                                </div>
+                                
+                                <div class="form-group mb-5">
+                                    <label for="username">Nom d'utilisateur </label>
+                                    <input type="text" class="form-control" name="username" placeholder="Username" ngModel #usernameInput="ngModel" required>
+                                <span class="help-block" style="color: red;" *ngIf="usernameInput.invalid && usernameInput.touched">
+                                    Veuillez entrez un nom d'utilisateur
+                                </span>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-blue" [disabled]="registerForm.invalid || showLoading">
+                                    <!-- Affiche le spinner et le texte de chargement seulement si showLoading est true -->
+                                    <span *ngIf="showLoading" class="d-flex align-items-center">
+                                        <div class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></div>
+                                        <span class="ml-2">Chargement...</span>
+                                    </span>
+                                    
+                                    <!-- Affiche le texte "S'enregistrer" si showLoading est false -->
+                                    <span *ngIf="!showLoading">S'enregistrer</span>
+                                </button>
+                                
+                                <!-- Espacement entre le bouton et le lien -->
+                                <div class="mt-3">
+                                    <a href="#" class="forgot-link text-primary">Mot de passe oublié ?</a>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <p class="text-muted text-center mt-3 mb-0">You have an account? <a routerLink="/login" href="login.html" class="text-primary ml-1">login</a></p>
+        </div>
+    </div>
+</div>
